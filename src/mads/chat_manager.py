@@ -1,6 +1,6 @@
 import logging
-from src.mads.agent_manager import AgentManager
-from src.mads.config import tasks
+from mads.agent_manager import AgentManager
+from mads.config import tasks
 
 # Configure logging
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')

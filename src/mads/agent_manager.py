@@ -1,5 +1,5 @@
 from autogen import ConversableAgent
-from src.mads.config import is_termination_msg_chat, STANDARD_CODE
+from mads.config import is_termination_msg_chat, STANDARD_CODE
 
 class AgentManager:
     """
