@@ -17,8 +17,8 @@ MADS is a project aimed at creating a platform where users can update a dataset.
 ## Setting Up MADS
 ```python
 import os
-from src.mads.chat_manager import ChatManager
-from src.mads.config import configure_llm, create_task_folders
+from mads.chat_manager import ChatManager
+from mads.config import configure_llm, create_task_folders
 
 # Check if the 'tasks' directory exists, if not, create it.
 if not os.path.exists('tasks'):
