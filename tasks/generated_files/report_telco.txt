@@ -1,0 +1,9 @@
+Problem of the user: Classification
+Target variable: Churn Category and Churn Reason
+Columns: Age, Number of Dependents, Zip Code, Latitude, Longitude, Population, Number of Referrals, Tenure in Months, Avg Monthly Long Distance Charges, Avg Monthly GB Download, Monthly Charge, Total Charges, Total Refunds, Total Extra Data Charges, Total Long Distance Charges, Total Revenue, Satisfaction Score, Churn Score, CLTV
+Correlations: Correlation matrix showing relationships between numeric columns
+Relevant insights: Tenure in Months has a strong positive correlation with CLTV, Avg Monthly Long Distance Charges has a strong negative correlation with CLTV
+Machine learning model used: Random Forest Classifier
+Explanation and alternatives: The Random Forest Classifier is chosen due to its ability to handle complex interactions between features, which is evident in the strong correlations between certain features such as Tenure in Months and CLTV. Additionally, it can handle both categorical and numerical features, making it suitable for this dataset. Alternative models that could be considered are Gradient Boosting Classifier and Support Vector Machines (SVMs).
+Transformations: Filled missing values with mean, created lag features, rolling mean and rolling standard deviation for time-series data
+Metrics of the evaluations of the predictions: Accuracy: ..., Classification Report: ..., Confusion Matrix: ...

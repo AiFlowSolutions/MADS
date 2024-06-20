@@ -1,0 +1,34 @@
+FuelConsumption Report
+===============
+
+Problem: Regression
+Target Variable: FUEL CONSUMPTION
+
+Columns:
+Year, MAKE, MODEL, VEHICLE CLASS, ENGINE SIZE, CYLINDERS, TRANSMISSION, FUEL, FUEL CONSUMPTION, COEMISSIONS
+
+Correlations:
+ENGINE SIZE is highly correlated with CYLINDERS and FUEL CONSUMPTION. FUEL CONSUMPTION is highly correlated with COEMISSIONS.
+
+Relevant Insights:
+ENGINE SIZE and CYLINDERS are important features for predicting FUEL CONSUMPTION. FUEL CONSUMPTION is highly correlated with COEMISSIONS, which may indicate a strong relationship between fuel consumption and emissions.
+
+Machine Learning Model Used: Random Forest Regressor
+Explanation and Alternatives:
+The reasons for this choice are: 
+1. Regression problem: The problem is a regression problem, and Random Forest Regressor is a suitable model for regression tasks.
+2. Feature correlations: The high correlation between ENGINE SIZE and CYLINDERS suggests that these features are important for predicting FUEL CONSUMPTION. Random Forest can handle correlated features effectively.
+3. Non-linear relationships: The correlation between FUEL CONSUMPTION and COEMISSIONS may indicate a non-linear relationship. Random Forest can capture non-linear relationships between features and the target variable.
+
+Transformations:
+Filled missing values with mean, created lag features and rolling mean and standard deviation features
+
+Splitting:
+Split the dataset into training and test subsets with a test size of 0.2 and random state 42
+
+Machine Learning Model Used: Random Forest Regressor
+Place where you saved predictions: generated_files/pred_FuelConsumption.csv
+
+Results of the evaluations:
+RMSE: 0.6641663654066673
+MAE: 0.30246093749999947

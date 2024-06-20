@@ -1,0 +1,10 @@
+Problem: Predict the age of crabs based on their physical characteristics.
+Target Variable: Age
+Columns: Sex, Length, Diameter, Height, Weight, Shucked Weight, Viscera Weight, Shell Weight, Age
+Correlations: The Length and Diameter columns are highly correlated (0.986653). The Weight, Shucked Weight, Viscera Weight, and Shell Weight columns are all highly correlated with each other. The Age column is moderately correlated with the other columns, with the highest correlation being with Shell Weight (0.625195).
+Relevant Insights: The correlation matrix provides insights into the relationships between the physical characteristics of crabs and their age. This information can be used to select the most relevant features for building a predictive model.
+Machine Learning Model Used: Random Forest Regressor
+Explanation and Alternatives: The Random Forest Regressor is chosen due to its ability to handle multicollinearity, capture non-linear relationships, and handle multiple features. The high correlation between Length and Diameter, as well as among Weight, Shucked Weight, Viscera Weight, and Shell Weight, suggests that a model that can handle correlated features is suitable. Additionally, the moderate correlations between Age and other columns indicate that a model that can capture non-linear relationships would be beneficial. Alternative models could include Gradient Boosting Regressor or Neural Networks, but Random Forest Regressor is a robust and interpretable choice.
+Transformations: Filled missing values with mean, encoded categorical data using LabelEncoder, and scaled numerical features using StandardScaler.
+Splitting: Split the dataset into training and test subsets with a test size of 0.2 and a random state of 42.
+Metrics of the Evaluations of the Predictions: RMSE: 2.12, MAE: 1.53

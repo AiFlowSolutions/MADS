@@ -1,0 +1,25 @@
+Microsoft Stock Forecast:
+*User problem*: Time-series
+*Target variable*: Future stock prices or trends
+*Indications to read data*: 
+import pandas as pd
+data = pd.read_csv('datasets/Microsoft_Stock.csv')
+*Problem*: Time-series forecasting
+*Correlations*: Open, High, Low, and Close prices are highly correlated with each other, while Volume is not as highly correlated with the prices.
+*Columns name*: Date, Open, High, Low, Close, Volume
+*Relevant insights*: The correlation matrix suggests that the trading volume is not strongly related to the stock price.
+*Problem*: Time-series forecasting
+*Machine learning model to use*: ARIMA (AutoRegressive Integrated Moving Average)
+*Explanation and alternatives*: ARIMA is suitable for this problem due to its ability to handle autocorrelations and partial autocorrelations in the data, which is evident from the high correlation between Open, High, Low, and Close prices. Although Volume is not strongly related to the stock price, ARIMA can still be used, focusing on the autocorrelations in the target variable (stock prices). Alternative models could be Prophet, LSTM, or other time-series forecasting models, but ARIMA is a suitable starting point.
+*Transformations*: Filled missing values with the mean of the respective column, created lag features, and rolling mean and standard deviation.
+*Splitting*: Split the data into training and test sets with a test size of 0.2.
+**Read the data**
+`pd.read_csv('X_train.csv')`
+`pd.read_csv('y_train.csv')`
+`pd.read_csv('X_test.csv')`
+`pd.read_csv('y_test.csv')`
+*ML model used*: ARIMA
+*Place where you saved predictions*: generated_files/pred_Microsoft_Stock.csv
+*Results of the evaluations*:
+RMSE: 74.72728469689712
+MAE: 66.90910917112147

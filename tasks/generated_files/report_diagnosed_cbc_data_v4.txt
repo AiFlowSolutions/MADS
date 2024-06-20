@@ -1,0 +1,20 @@
+Problem: Classification
+Target variable: Diagnosis
+Columns: WBC, LYMp, NEUTp, LYMn, NEUTn, RBC, HGB, HCT, MCV, MCH, MCHC, PLT, PDW, PCT, and Diagnosis
+Correlations: 
+The correlation matrix shows that some columns are highly correlated with each other. For example, WBC and LYMn have a correlation coefficient of 0.379974, which indicates a moderate positive correlation. Similarly, HGB and HCT have a correlation coefficient of 0.135668, which indicates a moderate positive correlation.
+Relevant insights: 
+The analysis revealed correlations between some of the numeric columns, which could be useful for building a classification model.
+Machine learning model used: Random Forest Classifier
+Explanation and alternatives: 
+The Random Forest Classifier is chosen due to its ability to handle correlated features, high-dimensional data, and its proven performance in classification problems. Other alternatives could be Gradient Boosting Classifier or Support Vector Machines (SVM), but Random Forest is a more robust choice given the correlations in the data.
+Transformations: 
+Filled missing values with mean, scaled the data using StandardScaler
+Splitting: 
+Split the dataset into training and test subsets with a test size of 0.2
+ML model used: Random Forest Classifier
+Place where you saved predictions: generated_files/pred_diagnosed_cbc_data_v4.csv
+Results of the evaluations: 
+Accuracy: 0.9883268482490273
+Classification Report: ...
+Confusion Matrix: ...

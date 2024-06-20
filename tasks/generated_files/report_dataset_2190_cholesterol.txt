@@ -1,0 +1,9 @@
+Problem of the user: Regression
+Target variable: chol (cholesterol level)
+Columns: age, sex, cp, trestbps, fbs, restecg, thalach, exang, oldpeak, slope, num, chol
+Correlations: age and thalach have a strong negative correlation, slope and oldpeak have a strong positive correlation
+Relevant insights: thalach increases, age and oldpeak tend to decrease, slope increases, oldpeak also tends to increase
+Machine learning model used: Random Forest Regressor
+Explanation and alternatives: The strong correlations between certain features, such as the negative correlation between age and thalach, and the positive correlation between slope and oldpeak, suggest that a model that can handle complex interactions and non-linear relationships would be suitable. Random Forest Regressor is an ensemble learning method that can effectively capture these relationships and provide accurate predictions for the target variable chol. Additionally, it is robust to outliers and can handle both categorical and numerical features.
+Transformations: Filled missing values with mean of numeric columns, encoded categorical columns using LabelEncoder
+Metrics of the evaluations of the predictions: RMSE: 61.33, MAE: 44.00

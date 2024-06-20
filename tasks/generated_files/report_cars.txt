@@ -1,0 +1,12 @@
+Problem of the user: Regression
+Target variable: Price
+Columns: Car_ID, Brand, Model, Year, Kilometers_Driven, Fuel_Type, Transmission, Owner_Type, Mileage, Engine, Power, Seats, Price
+Correlations: Price is highly correlated with Power and Engine, and negatively correlated with Year.
+Relevant insights: More powerful cars tend to be more expensive, newer cars tend to have fewer kilometers driven, and more powerful engines tend to be more expensive.
+Machine learning model used: Random Forest Regressor
+Explanation and alternatives: The correlations between the target variable Price and the features Power and Engine suggest a non-linear relationship, which can be effectively captured by an ensemble method like Random Forest. Additionally, the insights about more powerful cars being more expensive and newer cars having fewer kilometers driven can be learned by the model through the interactions between the features.
+Transformations: Filled missing values in numeric columns with mean, created lag features, and created rolling mean and standard deviation features.
+Splitting: Split data into training and test sets with a test size of 0.2 and a random state of 42.
+ML model used: Random Forest Regressor
+Place where you saved predictions: generated_files/pred_cars.csv
+Results of the evaluations: MSE: 139948375000.0, MAE: 204900.0

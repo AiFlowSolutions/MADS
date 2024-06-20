@@ -1,0 +1,9 @@
+Problem: Employee Attrition Classification
+Target variable: Attrition
+Columns: Age, Attrition, BusinessTravel, DailyRate, Department, DistanceFromHome, Education, EducationField, EmployeeCount, EmployeeNumber, EnvironmentSatisfaction, Gender, HourlyRate, JobInvolvement, JobLevel, JobRole, JobSatisfaction, MaritalStatus, MonthlyIncome, MonthlyRate, NumCompaniesWorked, Over18, OverTime, PercentSalaryHike, PerformanceRating, RelationshipSatisfaction, StandardHours, StockOptionLevel, TotalWorkingYears, TrainingTimesLastYear, WorkLifeBalance, YearsAtCompany, YearsInCurrentRole, YearsSinceLastPromotion, YearsWithCurrManager
+Correlations: Strong correlations between YearsAtCompany and YearsWithCurrManager, JobLevel and MonthlyIncome
+Relevant insights: These correlations can be used to inform the classification model.
+Machine learning model used: Random Forest Classifier
+Explanation and alternatives: The Random Forest Classifier is chosen due to its ability to handle high-dimensional data and non-linear relationships, which is suitable for this problem. The strong correlations between features, such as YearsAtCompany and YearsWithCurrManager, as well as JobLevel and MonthlyIncome, can be effectively captured by the Random Forest Classifier. Alternative models, such as Gradient Boosting Classifier or Support Vector Machines, could also be considered, but the Random Forest Classifier is a robust and effective choice for this classification problem.
+Transformations: Filled missing values with mean, created lag features for YearsAtCompany and JobLevel.
+Metrics of the evaluations of the predictions: Accuracy: 0.8775510204081632

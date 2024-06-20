@@ -1,0 +1,23 @@
+Problem: Regression problem to analyze the factors affecting the Performance Index of students.
+Target Variable: Performance Index
+Columns:
+Hours Studied, Previous Scores, Extracurricular Activities, Sleep Hours, Sample Question Papers Practiced, Performance Index
+Correlations:
+Strong correlation between Performance Index and Previous Scores (0.915189).
+Moderate correlation between Performance Index and Hours Studied (0.373730).
+Weak correlations between Performance Index and Sleep Hours, Sample Question Papers Practiced.
+Relevant Insights:
+Previous Scores are a strong indicator of future performance.
+Hours Studied have a moderate impact on Performance Index.
+Sleep Hours and Sample Question Papers Practiced may not have a significant impact on Performance Index.
+Machine Learning Model Used: Linear Regression
+Explanation and Alternatives: Linear Regression is chosen due to the strong correlation between Performance Index and Previous Scores, as well as the moderate correlation with Hours Studied, suggesting a linear relationship between these variables. This model can capture these relationships and make predictions about the Performance Index. Other alternatives could be Ridge Regression or Lasso Regression if there are issues with multicollinearity or feature selection.
+Transformations:
+Filled missing values with mean, scaled the data using StandardScaler, and handled categorical data using OneHotEncoder.
+Splitting:
+Split the dataset into training and test subsets with a test size of 0.2 and a random state of 42.
+ML Model Used: Linear Regression
+Place where you saved predictions: generated_files/pred_Student_Performance.csv
+Results of the evaluations:
+RMSE: 2.0206745905975128
+MAE: 1.610986328125

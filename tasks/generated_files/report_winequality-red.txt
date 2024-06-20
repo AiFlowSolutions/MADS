@@ -1,0 +1,9 @@
+Problem of the user: Classification of wine quality based on its chemical properties
+Target variable: quality
+Columns: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol, quality
+Correlations: Strong positive correlation between fixed acidity and citric acid, and between alcohol and quality. Strong negative correlation between volatile acidity and quality.
+Relevant insights: The correlations between the chemical properties of the wine and its quality can be used to build a predictive model for wine quality classification.
+Machine learning model used: Random Forest Classifier
+Explanation and alternatives: Random Forest Classifier is chosen due to its ability to handle correlations between features, capture non-linear relationships, and handle high-dimensional data. It is also robust to noisy data. Other alternatives could be Decision Trees, Support Vector Machines, or Neural Networks, but Random Forest is a suitable choice given the characteristics of the dataset.
+Transformations: Filled missing values with mean, no lag features created
+Metrics of the evaluations of the predictions: Accuracy: 0.659375

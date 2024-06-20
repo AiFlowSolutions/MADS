@@ -1,0 +1,24 @@
+
+Obesity Classification Report
+
+Problem: Classification
+
+Target Variable: Label
+
+Columns: ID, Age, Gender, Height, Weight, BMI, Label
+
+Problem Statement: Classify obesity levels based on various factors
+
+Correlations: Strong positive correlation between Weight and BMI, moderate positive correlation between Age and Weight, and between Age and BMI
+
+Relevant Insights: Strong correlation between Weight and BMI, Age has moderate correlation with Weight and BMI
+
+Machine Learning Model: Random Forest Classifier
+
+Explanation and Alternatives: The Random Forest Classifier is chosen due to its ability to handle mixed-type features, capture complex relationships, and perform well in multi-class classification problems. Alternative models could be Decision Trees, Support Vector Machines (SVM), or Gradient Boosting.
+
+Transformations: Filled missing values with mean
+
+Splitting: Split the dataset into training and test subsets with a test size of 0.2
+
+Metrics: Accuracy, Precision, Recall, F1-score

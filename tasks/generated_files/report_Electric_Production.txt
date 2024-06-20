@@ -1,0 +1,10 @@
+Problem: Time-series forecasting
+Target variable: IPG2211A2N
+Columns: DATE, IPG2211A2N
+Correlations: The correlation coefficient between the YEAR and IPG2211A2N columns is approximately 0.84, indicating a strong positive correlation.
+Relevant insights: The IPG2211A2N column has a mean of approximately 88.85, a standard deviation of approximately 15.39, and a range of values from approximately 55.32 to 129.40.
+Machine learning model used: ARIMA (AutoRegressive Integrated Moving Average)
+Explanation and alternatives: The strong positive correlation between the YEAR and IPG2211A2N columns suggests a trend component in the data, which ARIMA is well-suited to handle. Additionally, the summary statistics of the IPG2211A2N column indicate a relatively stable mean and standard deviation, which is consistent with the assumptions of an ARIMA model. Alternative models could include Prophet or LSTM, but ARIMA is a more traditional and widely-used approach for time-series forecasting.
+Transformations: Filled missing values in the 'IPG2211A2N' column with the mean of that column. Created lag features 'lag1' and 'lag2', and rolling mean and standard deviation features 'rolling_mean' and 'rolling_std'.
+Splitting: Split the dataset into features (X) and target (y). Then, split the dataset into training and test subsets with a test size of 0.2.
+Metrics of the evaluations of the predictions: RMSE: 17.20696699800095, MAE: 14.283101621885743

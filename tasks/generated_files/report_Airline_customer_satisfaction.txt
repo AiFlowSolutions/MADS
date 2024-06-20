@@ -1,0 +1,32 @@
+Airline Customer Satisfaction Report
+
+Problem: Classification
+
+Target variable: satisfaction
+
+Columns:
+satisfaction, Customer Type, Age, Type of Travel, Class, Flight Distance, Seat comfort, Departure/Arrival time convenient, Food and drink, Gate location, Inflight wifi service, Inflight entertainment, Online support, Ease of Online booking, On-board service, Leg room service, Baggage handling, Checkin service, Cleanliness, Online boarding, Departure Delay in Minutes, Arrival Delay in Minutes
+
+Correlations:
+The correlation matrix shows a strong positive correlation between `Departure Delay in Minutes` and `Arrival Delay in Minutes`.
+
+Relevant insights:
+The correlation matrix provides insights into the relationships between numerical variables.
+
+Machine learning model used: Random Forest Classifier
+
+Explanation and alternatives:
+The Random Forest Classifier is chosen due to its ability to handle correlated features, such as `Departure Delay in Minutes` and `Arrival Delay in Minutes`, and its robustness to outliers. Additionally, it can effectively identify complex relationships between variables and handle both categorical and numerical features. Alternative models could include Gradient Boosting Classifier or Support Vector Machines, but the Random Forest Classifier is a suitable choice given the characteristics of the dataset.
+
+Transformations:
+Filled missing values with mean, encoded categorical variables using LabelEncoder
+
+Splitting:
+Split the dataset into training and test subsets with a test size of 0.2 and saved as X_train.csv, X_test.csv, y_train.csv, y_test.csv
+
+ML model used: Random Forest Classifier
+
+Place where you saved predictions: generated_files/pred_Airline_customer_satisfaction.csv
+
+Results of the evaluations: Accuracy: 0.9574222359100708
+

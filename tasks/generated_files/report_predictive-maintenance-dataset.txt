@@ -1,0 +1,9 @@
+Problem of the user: Regression
+Target variable: vibration
+Columns: ID, revolutions, humidity, vibration, x1, x2, x3, x4, x5
+Correlations: revolutions and x1 have a very high correlation of 0.999356, x2 and x3 have a high correlation of 0.999934.
+Relevant insights: revolutions and x1 are almost identical, x2 and x3 are highly correlated. humidity and vibration have a relatively low correlation with the other variables.
+Machine learning model used: Random Forest Regressor
+Explanation and alternatives: Random Forest Regressor is chosen due to its ability to handle correlated features, non-linear relationships, and multiple features.
+Transformations: Filled missing values with mean, created lag features, and created rolling mean and standard deviation features.
+Metrics of the evaluations of the predictions: RMSE: 23.08552361139446, MAE: 13.619487324312221

@@ -1,0 +1,9 @@
+Problem of the user: Time-series forecasting
+Target variable: PJME
+Columns: Datetime, PJME
+Correlations: No correlations found
+Relevant insights: No relevant insights found
+Machine learning model used: ARIMA
+Explanation and alternatives: ARIMA is a popular choice for time-series forecasting due to its ability to handle non-stationarity and seasonality in the data. It's a powerful model that can capture patterns and trends in the data, making it an excellent choice for this problem. Alternative models could be Prophet, LSTM, or SARIMA, but ARIMA is a good starting point.
+Transformations: Filled missing values with mean, created lag features, and rolling mean and standard deviation features
+Metrics of the evaluations of the predictions: RMSE: 6624.542891576956, MAE: 5032.836824876866

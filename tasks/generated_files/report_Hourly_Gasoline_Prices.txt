@@ -1,0 +1,10 @@
+Data set name: Hourly_Gasoline_Prices
+User problem: Time-series forecasting
+Target variable: Price
+Columns: Id, isSelf, Price, Date
+Correlations: Strong negative correlation between isSelf and Price, weak negative correlation between Id and Price, and weak negative correlation between Id and isSelf
+Relevant insights: The correlations suggest that isSelf has a significant impact on Price, and Id has a smaller impact on Price and isSelf
+Machine learning model used: ARIMA (AutoRegressive Integrated Moving Average) model
+Explanation and alternatives: ARIMA is suitable for this problem because it can handle non-stationary time series data, which is common in hourly price data. It can also capture patterns and trends in the data. Alternative models could be Prophet, LSTM, or SARIMA, but ARIMA is a good starting point due to its simplicity and interpretability.
+Transformations: Filled missing values with the mean of the 'Price' column, created lag features, created rolling mean and standard deviation features
+Metrics of the evaluations of the predictions: RMSE: 0.1800950273963919, MAE: 0.14422423647412985

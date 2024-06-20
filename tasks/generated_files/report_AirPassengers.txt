@@ -1,0 +1,9 @@
+Problem of the user: Time-series forecasting of airline passengers
+Target variable: #Passengers
+Columns: Month, #Passengers
+Correlations: Strong positive correlation between #Passengers and Year, weak positive correlation between #Passengers and Month
+Relevant insights: The number of passengers has been increasing over the years, with some seasonal variation.
+Machine learning model used: SARIMA
+Explanation and alternatives: The SARIMA model is chosen due to the strong positive correlation between #Passengers and Year, and the seasonal variation in the data. This model can handle the trend and seasonality in the data, providing accurate forecasts. Alternative models could be Prophet or LSTM, but SARIMA is a more traditional and widely used approach for time-series forecasting.
+Transformations: Filled missing values with mean, created lag features, and encoded categorical columns
+Splitting: Split the dataset into training and test subsets with a test size of 0.2

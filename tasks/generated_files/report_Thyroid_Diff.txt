@@ -1,0 +1,9 @@
+Problem: Classification
+Target variable: Recurred
+Columns: Age, Gender, Smoking, Hx Smoking, Hx Radiothreapy, Thyroid Function, Physical Examination, Adenopathy, Pathology, Focality, Risk, T, N, M, Stage, Response, Recurred
+Correlations: Only Age column is numerical, correlation of Age with itself is 1.0
+Relevant insights: The dataset contains 383 entries, with 17 columns. Most columns are categorical, and only the Age column is numerical. The target variable is Recurred.
+Machine learning model used: Random Forest Classifier
+Explanation and alternatives: Random Forest Classifier is chosen due to its ability to handle mixed data types, high dimensionality, and non-linear relationships. It is also robust to class imbalance issues and provides feature importance for interpretability. Alternative models could be Decision Trees, Support Vector Machines, or Gradient Boosting Classifiers, but Random Forest is a good starting point due to its versatility and ease of use.
+Transformations: Filled missing values with mean, encoded categorical variables using LabelEncoder
+Metrics of the evaluations of the predictions: Accuracy: 0.987012987012987
