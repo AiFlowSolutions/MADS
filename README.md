@@ -22,6 +22,8 @@ To begin using our library, simply install it via pip:
 `pip install mads`
 
 ## Setting Up MADS
+Before running the bellow script. Create a .env file and place your API Key inside it: GROQ_API_KEY="your_api_key" or OPENAI_API_KEY="your_api_key"
+
 ```python
 import os
 from mads.chat_manager import ChatManager
