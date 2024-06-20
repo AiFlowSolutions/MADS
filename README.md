@@ -80,5 +80,19 @@ If you encounter any problems while using our library, please don't hesitate to 
 
 Your feedback is valuable to us and will help improve the library for everyone. Thank you for contributing to the project!
 
+## Contact Us
+
+If you have any questions, suggestions, or feedback regarding MADS, please feel free to reach out to us:
+
+- **Company Email**: [info@aiflowsolutions.eu](mailto:info@aiflowsolutions.eu)
+
+### Main Contributors
+
+- **Email**: [wutsuperwut@gmail.com](mailto:wutsuperwut@gmail.com)
+- **Email**: [diogofranciscop@hotmail.com](mailto:diogofranciscop@hotmail.com)
+
+We are committed to improving MADS based on your input and look forward to hearing from you!
+
+
 ## License
 MADS is released under the MIT License.
