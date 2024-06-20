@@ -7,6 +7,8 @@
 
 [[Our Website]](https://aiflowsolutions.github.io/site-agi-flow-solutions/) | [[Our Research Website]](https://aiflowsolutions.github.io/site-agi-flow-research-robotics/) | [[pré-print MADS paper]](https://aiflowsolutions.github.io/site-agi-flow-research-robotics/papers.html)
 
+[![PyPI](https://img.shields.io/pypi/v/pymads)](https://pypi.org/project/pymads/)
+
 </h3>
 </div>
 
