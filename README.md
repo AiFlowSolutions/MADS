@@ -8,7 +8,7 @@ In this branch, you will find the exact experiments that we have reproduced in o
 - Ensure you have python installed on your system.
 - Clone our repository locally by executing the following command in your terminal: `git clone https://github.com/AiFlowSolutions/MADS`
 - Navigate to the folder MADS.
-- Switch from the main branch to this branch:: `git checkout experimental-results-paper`
+- Switch from the main branch to this branch: `git checkout experimental-results-paper`
 - Create a virtual enviroment: `python -m venv .venv`
 - Activate your virtual enviroment: `.\.venv\Scripts\activate`
 - Install the required packages: `pip install -r requirements.txt`
