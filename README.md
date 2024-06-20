@@ -19,7 +19,7 @@ MADS requires Python >=3.11.7 installed on your system. We recommend setting up 
 - Activate your virtual environment: `.\.venv\Scripts\activate`
 
 To begin using our library, simply install it via pip:
-`pip install mads`
+`pip install pymads`
 
 ## Setting Up MADS
 Before running the bellow script create a `.env` file and place your API Key inside it: `GROQ_API_KEY="your_api_key"` or `OPENAI_API_KEY="your_api_key"`
