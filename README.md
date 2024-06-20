@@ -88,7 +88,7 @@ If you have any questions, suggestions, or feedback regarding MADS, please feel 
 
 - **Company Email**: [info@aiflowsolutions.eu](mailto:info@aiflowsolutions.eu)
 
-### Main Contributors
+##### Main Contributors
 
 - **Email**: [wutsuperwut@gmail.com](mailto:wutsuperwut@gmail.com)
 - **Email**: [diogofranciscop@hotmail.com](mailto:diogofranciscop@hotmail.com)
