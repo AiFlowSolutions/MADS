@@ -15,8 +15,8 @@ MADS is a project aimed at creating a platform where users can update a dataset.
 
 ## Installation
 MADS requires Python >=3.11.7 installed on your system. We recommend setting up a virtual environment before starting to work with MADS:
-- Create a virtual environment: python -m venv .venv
-- Activate your virtual environment: .\.venv\Scripts\activate
+- Create a virtual environment: `python -m venv .venv`
+- Activate your virtual environment: `.\.venv\Scripts\activate`
 
 To begin using our library, simply install it via pip:
 `pip install mads`
