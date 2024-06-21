@@ -12,6 +12,17 @@
 </h3>
 </div>
 
+## Table of contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Setting up MADS](#setting-up-mads)
+- [Contribuition](#contribuition)
+- [Issue Reporting](#issue-reporting)
+- [Contact us](#contact-us)
+- [License](#license)
+
+
 ## Overview
 MADS is a project aimed at creating a platform where users can update a dataset. Our agents will then execute all the necessary steps in the data science pipeline. The user simply needs to define the goal of the project, and our agents will handle the rest. In the end, the user will have access to a trained model, to the predictions and a report that includes insights from each agent.
 
