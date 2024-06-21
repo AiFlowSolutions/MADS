@@ -26,6 +26,13 @@
 ## Overview
 MADS is a project aimed at creating a platform where users can update a dataset. Our agents will then execute all the necessary steps in the data science pipeline. The user simply needs to define the goal of the project, and our agents will handle the rest. In the end, the user will have access to a trained model, to the predictions and a report that includes insights from each agent.
 
+## Roadmap
+- Implement a Reiforcment Learning Agent to improve the current prompts.
+- Create tools for the agents to use them.
+    - Example 1: For the model-building agent, provide a tool like one from Nixtla's library to improve forecasting for time series problems.
+    - Example 2: For the model consultant agent, create a tool to optimize the selected model.
+- Introduce a new agent to interact with the data analyst and generate visualizations useful for the final report.
+
 ## Installation
 MADS requires Python >=3.11.7 installed on your system. We recommend setting up a virtual environment before starting to work with MADS:
 - Create a virtual environment: `python -m venv .venv`
@@ -108,6 +115,8 @@ If you have any questions, suggestions, or feedback regarding MADS, please feel 
 
 We are committed to improving MADS based on your input and look forward to hearing from you!
 
+## Ackonwledgments
+A heartfelt thank you to all the contributors of the autogen framework. Your dedication and hard work have been instrumental in making this project possible. We deeply appreciate the entire community's support and involvement.
 
 ## License
 MADS is released under the MIT License.
