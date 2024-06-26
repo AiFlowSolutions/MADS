@@ -70,7 +70,7 @@ model = configure_llm("llama3-70b-8192", GROQ_API_KEY)
 problem = "I want to predict wine quality"
 
 # Specify the filename of your data
-dataset = "winequality-red"
+dataset = "winequality-red.csv"
 
 # Choose the agents to deploy.
 # Here, we select all six available agents.

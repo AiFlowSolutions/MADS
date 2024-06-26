@@ -19,7 +19,7 @@ class ChatManager:
     def __init__(self, dataset_name, user_problem, model, include_chats=None):
         try:
             self.task = tasks(user_problem)
-            self.dataset_path = f'datasets/{dataset_name}.csv'
+            self.dataset_path = f'datasets/{dataset_name}'
             self.agent_manager = AgentManager(llm_config=model, data_name=dataset_name)
             self.user = self.agent_manager.user_agent()
             self.include_chats = include_chats if include_chats is not None else list(range(1, 7))
