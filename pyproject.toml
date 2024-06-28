@@ -59,3 +59,7 @@ classifiers = [
 Homepage = "https://github.com/AiFlowSolutions/MADS"
 Issues = "https://github.com/AiFlowSolutions/MADS/issues"
 
+
+[tool.pytest]
+addopts = "--strict-markers"
+testpaths = ["tests"]

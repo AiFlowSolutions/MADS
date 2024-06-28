@@ -11,7 +11,7 @@ class AgentManager:
     """
     def __init__(self, llm_config, data_name):
         self.llm_config = {"config_list": llm_config}
-        self.data = data_name
+        self.data = data_name.replace('.csv', '')
         self.costar_instructions = {
             "User":  """
                     # CONTEXT #

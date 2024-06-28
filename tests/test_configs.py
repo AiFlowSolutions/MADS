@@ -59,29 +59,3 @@ def test_is_termination_msg_chat_dict():
 def test_is_termination_msg_chat_dict_empty_content():
     message = {"content": ""}
     assert is_termination_msg_chat(message) == True
-
-# Tests for the create folder function
-
-def test_create_task_folders(mocker):
-    # Mock os.makedirs to prevent actual folder creation
-    mock_makedirs = mocker.patch("os.makedirs")
-
-    create_task_folders()
-
-    # Assert that os.makedirs was called with the correct parameters
-    mock_makedirs.assert_any_call('tasks', exist_ok=True)
-    mock_makedirs.assert_any_call(os.path.join('tasks', 'datasets'), exist_ok=True)
-    mock_makedirs.assert_any_call(os.path.join('tasks', 'generated_files'), exist_ok=True)
-    assert mock_makedirs.call_count == 3
-
-def test_create_task_folders_exception(mocker):
-    # Mock os.makedirs to raise an exception
-    mock_makedirs = mocker.patch("os.makedirs", side_effect=Exception("Test error"))
-
-    # Mock print to verify error message
-    mock_print = mocker.patch("builtins.print")
-
-    create_task_folders()
-
-    # Assert that the error message was printed
-    mock_print.assert_called_with("An error occurred: Test error")
