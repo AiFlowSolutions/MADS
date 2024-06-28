@@ -63,7 +63,7 @@ class ChatManager:
                     *Target variable*
                     `write here the target variable`
                     ---
-                    *Indications to read data*
+                    *Indications on how to write the code to read data*
                     `Write the code that you read the data`
                     """,
                 2: """

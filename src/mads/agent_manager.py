@@ -249,7 +249,7 @@ class AgentManager:
                 "last_n_messages": 2,
                 "work_dir": "tasks",
                 "use_docker": False,
-            } if name == "User" else {},
+            } if name == "User" else False,
             human_input_mode="NEVER",
             system_message=system_message.format(STANDARD_CODE=STANDARD_CODE),
             is_termination_msg=is_termination_msg_chat if name == "User" else None,
