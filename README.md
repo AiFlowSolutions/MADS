@@ -15,6 +15,7 @@
 ## Table of contents
 
 - [Overview](#overview)
+- [Roadmap](#roadmap)
 - [Installation](#installation)
 - [Setting up MADS](#setting-up-mads)
 - [Contribuition](#contribuition)
