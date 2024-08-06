@@ -28,7 +28,7 @@
 MADS is a project aimed at creating a platform where users can update a dataset. Our agents will then execute all the necessary steps in the data science pipeline. The user simply needs to define the goal of the project, and our agents will handle the rest. In the end, the user will have access to a trained model, to the predictions and a report that includes insights from each agent.
 
 ### Squema 
-![Squema](docs\assets\squema.jpg)
+![Squema](docs/assets/squema.jpg)
 
 ## Roadmap
 - Implement a Reiforcment Learning Agent to improve the current prompts.
