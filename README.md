@@ -33,9 +33,8 @@ MADS is a project aimed at creating a platform where users can update a dataset.
 ### Demo
 This is a video demo of a plataform where we apply the MADS library.
 <div align="center">
-<h3>Video Demo</h3>
 <video width="600" controls>
-  <source src="docs\assets\demo-tera-systems.mp4" type="video/mp4">
+  <source src="docs/assets/demo-tera-systems.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 </div>
