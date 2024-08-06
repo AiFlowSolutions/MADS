@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pymads"
-version = "0.0.5"
+version = "0.0.6"
 dependencies = [
     "annotated-types>=0.7.0",
     "anyio>=4.4.0",
@@ -29,7 +29,6 @@ dependencies = [
     "python-dateutil>=2.9.0.post0",
     "python-dotenv>=1.0.1",
     "pytz>=2024.1",
-    "pywin32>=306",
     "regex>=2024.5.15",
     "requests>=2.32.3",
     "six>=1.16.0",
