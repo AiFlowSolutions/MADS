@@ -51,7 +51,7 @@ To begin using our library, simply install it via pip:
 
 ## Setting Up MADS
 Before running the bellow script create a `.env` file and place your API Key inside it: `GROQ_API_KEY="your_api_key"` or `OPENAI_API_KEY="your_api_key"`.
-If you don't have docker on your system, place `AUTOGEN_USE_DOCKER = "False"` inside your `.env`.
+Although by default, Docker usage for code execution is set to false, some users have encountered issues with agents still attempting to use the Docker engine. To ensure that the agents do not look for Docker, place `AUTOGEN_USE_DOCKER="False"` inside your `.env` file.
 
 ```python
 import os
